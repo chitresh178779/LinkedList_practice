@@ -63,8 +63,17 @@ int  startofcycle(Node* head){
     while(fast!=NULL && fast->next!=nullptr){
         slow=slow->next;
         fast=fast->next->next;
-        if(slow==fast)
-            return slow->next->data;
+        if(slow==fast){
+             slow=head;
+        while(slow!=NULL && fast!=NULL){
+            slow=slow->next;
+            fast=fast->next;
+            if(slow==fast){
+                return slow->data;
+            }
+        }
+    }
+       
     }
     return -1;
 }
