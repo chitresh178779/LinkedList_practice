@@ -11,15 +11,15 @@ class Node
     Node *child;
     Node()
     {
-        data = 0;
-        next = NULL;
-        child = NULL;
+        data=0;
+        next=NULL;
+        child=NULL;
     }
     Node(int data1)
     {
-        data = data1;
-        next = NULL;
-        child = NULL;
+        data=data1;
+        next=NULL;
+        child=NULL;
     }
     Node(int data1, Node *next1, Node* next2)
     {
